@@ -15,7 +15,6 @@ from selenium.common.exceptions import TimeoutException
 from src.functions.Inicializar import Inicializar
 from selenium.webdriver.common.action_chains import ActionChains
 
-
 class Functions():
 
     def Xpath_Elements(self, XPATH):
@@ -50,6 +49,35 @@ class Functions():
             return False
         
         print (u"esperar_CSS: Se mostró el elemento " + CSS)
+        return True
+    
+    ##########################################################################
+    ##############       -=_JS     CLICKS _=-              ###################
+    ##########################################################################
+         
+         
+    def JS_Click_Xpath(self, xpath):
+        localizador = self.driver.find_element_by_xpath(xpath)
+        self.driver.execute_script("arguments[0].click();", localizador)
+    
+    def JS_Click_CSS(self, css):
+        localizador = self.driver.find_element_by_css_selector(css)
+        self.driver.execute_script("arguments[0].click();", localizador)
+        
+    ##########################################################################
+    ##############   -=_JS     IR     A _=-                ###################
+    ##########################################################################
+    def ir_a_xpath(self, elemento):
+        try:
+            localizador = self.driver.find_element(By.XPATH, elemento)  
+            self.driver.execute_script("arguments[0].scrollIntoView();", localizador)
+            
+        except TimeoutException:
+            
+            print (u"ir_a_xpath: No presente " + elemento)
+            return False
+        
+        print (u"ir_a_xpath: Se desplazó al elemento, " + elemento)
         return True
             
     ##############   -=_CAPTURA DE PANTALLA_=-   #############################
@@ -129,33 +157,4 @@ class Functions():
             print ("Define bien el DRIVER")
             print ("----------------")
             
-        ################## codigo negro #######################
-         
-         
-    def JS_Click_Xpath(self, xpath):
-        localizador = self.driver.find_element_by_xpath(xpath)
-        self.driver.execute_script("arguments[0].click();", localizador)
-    
-    def JS_Click_CSS(self, css):
-        localizador = self.driver.find_element_by_css_selector(css)
-        self.driver.execute_script("arguments[0].click();", localizador)
-        
-    ##########################################################################
-    ##############   -=_JS IR A + CAPTURA DE PANTALLA_=-   ###################
-    ##########################################################################
-        
-        
-    def ir_a_xpath(self, elemento):
-        try:
-            localizador = self.driver.find_element(By.XPATH, elemento)  
-            self.driver.execute_script("arguments[0].scrollIntoView();", localizador)
-            
-        except TimeoutException:
-            
-            print (u"ir_a_xpath: No presente " + elemento)
-            return False
-        
-        print (u"ir_a_xpath: Se desplazó al elemento, " + elemento)
-        return True
-    
-        self.capturarPantalla()
+
