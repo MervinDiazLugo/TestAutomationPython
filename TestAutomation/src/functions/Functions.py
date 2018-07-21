@@ -139,4 +139,6 @@ class Functions():
     def JS_Click_CSS(self, css):
         localizador = self.driver.find_element_by_css_selector(css)
         self.driver.execute_script("arguments[0].click();", localizador)
+        
+        ####################################
     
