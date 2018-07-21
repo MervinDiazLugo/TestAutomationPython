@@ -140,5 +140,22 @@ class Functions():
         localizador = self.driver.find_element_by_css_selector(css)
         self.driver.execute_script("arguments[0].click();", localizador)
         
-        ####################################
+    ##########################################################################
+    ##############   -=_JS IR A + CAPTURA DE PANTALLA_=-   ###################
+    ##########################################################################
+        
+        
+    def ir_a_xpath(self, elemento):
+        try:
+            localizador = self.driver.find_element(By.XPATH, elemento)  
+            self.driver.execute_script("arguments[0].scrollIntoView();", localizador)
+            
+        except TimeoutException:
+            
+            print (u"ir_a_xpath: No presente " + elemento)
+            return False
+        
+        print (u"ir_a_xpath: Se desplazó al elemento, " + elemento)
+        return True
     
+        self.capturarPantalla()
