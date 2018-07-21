@@ -16,3 +16,5 @@ class Mercadolibre:
     
     lbl_ImagenesJuntas_xpath = "html/body/main/section[2]/div"
     
+    lbl_Mujers_xpath = "html/body/main/nav/ul/li[1]"
+    
