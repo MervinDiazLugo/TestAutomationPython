@@ -13,12 +13,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 from src.functions.Inicializar import Inicializar
-<<<<<<< HEAD
-     ####branch temp
-=======
 from selenium.webdriver.common.action_chains import ActionChains
 
->>>>>>> branch 'master' of https://github.com/MervinDiazLugo/TestAutomationPython.git
 
 class Functions():
 
