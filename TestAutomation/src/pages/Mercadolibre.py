@@ -12,3 +12,7 @@ class Mercadolibre:
     
     btn_DescargaAplicacion_xpath = "html/body/footer/div[2]/div[2]/a"
     
+    lbl_Moda_xpath = "html/body/header/div/div[2]/div/ul/li[1]/nav/section[1]/ul[2]/li[1]/a"
+    
+    lbl_ImagenesJuntas_xpath = "html/body/main/section[2]/div"
+    
