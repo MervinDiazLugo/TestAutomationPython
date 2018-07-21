@@ -13,7 +13,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 from src.functions.Inicializar import Inicializar
-     
+from selenium.webdriver.common.action_chains import ActionChains
+
 
 class Functions():
 
@@ -127,3 +128,15 @@ class Functions():
             print ("----------------")
             print ("Define bien el DRIVER")
             print ("----------------")
+            
+        ################## codigo negro #######################
+         
+         
+    def JS_Click_Xpath(self, xpath):
+        localizador = self.driver.find_element_by_xpath(xpath)
+        self.driver.execute_script("arguments[0].click();", localizador)
+    
+    def JS_Click_CSS(self, css):
+        localizador = self.driver.find_element_by_css_selector(css)
+        self.driver.execute_script("arguments[0].click();", localizador)
+    
