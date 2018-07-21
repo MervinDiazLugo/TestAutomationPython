@@ -1,7 +1,7 @@
 '''
 Created on 7 feb. 2018
 
-@author: Alejandro
+@author: MMLPQTP
 '''
 
 import time
