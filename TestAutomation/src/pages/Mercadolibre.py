@@ -18,3 +18,7 @@ class Mercadolibre:
     
     lbl_Mujers_xpath = "html/body/main/nav/ul/li[1]"
     
+    lbl_menu_moda_xpath = "//*[contains(.,'Moda')]"
+    
+    btn_Android_xpath = "//a[@class='btn-app-gplay']"
+    

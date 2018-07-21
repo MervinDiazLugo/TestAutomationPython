@@ -32,13 +32,14 @@ class Functions():
         try:
             wait = WebDriverWait(self.driver, 10)
             wait.until(EC.visibility_of_element_located((By.XPATH, XPATH)))
+            print (u"esperar_Xpath: Se mostró el elemento " + XPATH)
+            return True
 
         except TimeoutException:
             print (u"esperar_Xpath: No presente " + XPATH)
             return False
         
-        print (u"esperar_Xpath: Se mostró el elemento " + XPATH)
-        return True
+        
     
     def esperar_CSS(self, CSS):
         try:
@@ -61,9 +62,11 @@ class Functions():
         try:
             localizador = self.driver.find_element_by_xpath(xpath)
             self.driver.execute_script("arguments[0].click();", localizador)
+            print ("JS_Click_Xpath: Se hizo click en: " +  xpath)
             return True
         
         except NoSuchElementException:
+            print ("JS_Click_Xpath: No se encontro " +  xpath)
             return False
             
     def JS_Click_CSS(self, css):
@@ -98,8 +101,27 @@ class Functions():
         element = self.driver.find_element_by_css_selector(css)
         action = ActionChains(self.driver)
         action.move_to_element(element).perform() 
-        
-        
+  
+    def verificar_xpath(self, xpath): #devuelve true o false
+        try:
+            self.driver.find_element_by_xpath(xpath)
+        except NoSuchElementException:
+            print (u"Verificar: Elemento No presente " + xpath)
+            return False
+        print (u"Verificar: Se visualizo el elemento, "+ xpath)
+        return True      
+    
+    
+    def verificar_CSS(self, CSS): #devuelve true o false
+        try:
+            self.driver.find_element_by_css_selector(CSS)
+        except NoSuchElementException:
+            print (u"Verificar: Elemento No presente " + CSS)
+            return False
+        print (u"Verificar: Se visualizo el elemento, "+ CSS)
+        return True
+    
+    
     ##############   -=_CAPTURA DE PANTALLA_=-   #############################
     ##########################################################################        
     def capturar_Pantalla(self):  
@@ -128,7 +150,16 @@ class Functions():
          
         return img  
     
-    
+    def waitStopLoad(self, timeLoad=8):
+        print ("waitStopLoad: Inicia")
+        try:
+                totalWait = 0
+                while (totalWait < timeLoad):
+                    print("Cargando ... intento: " + str(totalWait))
+                    time.sleep(1)
+                    totalWait = totalWait + 1
+        except: 
+            print ("waitStopLoad: Carga Finalizada ... ")
     ##########################################################################
     ##############   -=_INICIALIZAR DRIVERS_=-   #############################
     ##########################################################################
