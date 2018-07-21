@@ -13,6 +13,8 @@ class Inicializar():
 
     URL = "https://trello.com/login"
     
+    URL2 = "https://www.mercadolibre.com.ar/"
+    
     NAVEGADOR = "FIREFOX"
     
     binario_firefox = "C:\\Framework\\FirefoxPortable\\App\\Firefox\\firefox.exe"

@@ -12,6 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import NoSuchElementException
 from src.functions.Inicializar import Inicializar
 from selenium.webdriver.common.action_chains import ActionChains
 
@@ -57,9 +58,14 @@ class Functions():
          
          
     def JS_Click_Xpath(self, xpath):
-        localizador = self.driver.find_element_by_xpath(xpath)
-        self.driver.execute_script("arguments[0].click();", localizador)
-    
+        try:
+            localizador = self.driver.find_element_by_xpath(xpath)
+            self.driver.execute_script("arguments[0].click();", localizador)
+            return True
+        
+        except NoSuchElementException:
+            return False
+            
     def JS_Click_CSS(self, css):
         localizador = self.driver.find_element_by_css_selector(css)
         self.driver.execute_script("arguments[0].click();", localizador)
@@ -79,7 +85,21 @@ class Functions():
         
         print (u"ir_a_xpath: Se desplazó al elemento, " + elemento)
         return True
-            
+    
+    ##########################################################################
+    ##############    -=_ACTION CHAINS _=-                ###################
+    ##########################################################################
+    def mouse_over_xpath(self, xpath):
+        element = self.driver.find_element_by_xpath(xpath)
+        action = ActionChains(self.driver)
+        action.move_to_element(element).perform()
+        
+    def mouse_over_css(self, css):
+        element = self.driver.find_element_by_css_selector(css)
+        action = ActionChains(self.driver)
+        action.move_to_element(element).perform() 
+        
+        
     ##############   -=_CAPTURA DE PANTALLA_=-   #############################
     ##########################################################################        
     def capturar_Pantalla(self):  
@@ -126,7 +146,7 @@ class Functions():
             self.driver = webdriver.Chrome(chrome_options=options)
             self.driver.implicitly_wait(10)
             self.dir_navegador = "CHROME"
-            self.driver.get( Inicializar.URL)
+            self.driver.get(Inicializar.URL)
             return self.driver
         
         if navegador == ("CHROME_headless"):
