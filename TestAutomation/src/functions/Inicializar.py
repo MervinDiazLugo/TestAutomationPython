@@ -15,7 +15,7 @@ class Inicializar():
     
     URL2 = "https://www.mercadolibre.com.ar/"
     
-    NAVEGADOR = "FIREFOX"
+    NAVEGADOR = "CHROME"
     
     binario_firefox = "C:\\Framework\\FirefoxPortable\\App\\Firefox\\firefox.exe"
 

@@ -1256,6 +1256,7 @@ JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The scri
 1532210111932	Marionette	INFO	Listening on port 57669
 1532210112275	Marionette	WARN	TLS certificate errors will be ignored for this session
 1532210136160	Marionette	INFO	New connections will no longer be accepted
+<<<<<<< HEAD
 1533419227301	geckodriver	INFO	geckodriver 0.19.0 (f0b5f3476d8b05a3bacebb06056ff933e26a17fa 2017-09-16)
 1533419227316	geckodriver	INFO	Listening on 127.0.0.1:52666
 1533419230642	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Will\\AppData\\Local\\Temp\\rust_mozprofile.mWQJuTJtauDm"
@@ -1368,3 +1369,9 @@ init/<()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/ma
 1533424491594	Marionette	INFO	Listening on port 55521
 1533424491699	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://http2.mlstatic.com/static/org-img/ch/vendor/jquery/jquery-1.10.2.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+=======
+1533420053096	geckodriver	INFO	geckodriver 0.20.1 (685f18325cea0a282c736e65972f95aa6db7ca48 2018-04-03)
+1533420053159	geckodriver	INFO	Listening on 127.0.0.1:64970
+1533420127624	geckodriver	INFO	geckodriver 0.20.1 (685f18325cea0a282c736e65972f95aa6db7ca48 2018-04-03)
+1533420127643	geckodriver	INFO	Listening on 127.0.0.1:65009
+>>>>>>> branch 'master' of https://github.com/MervinDiazLugo/TestAutomationPython
