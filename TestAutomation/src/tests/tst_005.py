@@ -24,12 +24,12 @@ from src.pages.Mercadolibre import Mercadolibre
 class tst_005(unittest.TestCase, Functions):
 
     def setUp(self):
-        with allure.step(u'VER PRODUCTOS DE DAMAS, DESCARGA DE APP')
-        self.driver = self.abrir_Navegador()
-        self.driver.get(Inicializar.URL2)
+        with allure.step(u'VER PRODUCTOS DE DAMAS, DESCARGA DE APP'):
+            self.driver = self.abrir_Navegador()
+            self.driver.get(Inicializar.URL2)
 
     def test_005_A(self):
-        with allure.step(u'Ver en Pantalla Productos de Damas')
+        with allure.step(u'Ver en Pantalla Productos de Damas'):
             self.waitStopLoad(5)
             self.esperar_Xpath(Mercadolibre.btn_DescargaAplicacion_xpath)
         
@@ -45,7 +45,7 @@ class tst_005(unittest.TestCase, Functions):
 
 
     def test_005_B(self):
-        with allure.step(u'Ir a la pantalla para Descargar APP')
+        with allure.step(u'Ir a la pantalla para Descargar APP'):
             self.esperar_Xpath(Mercadolibre.btn_DescargaAplicacion_xpath)
         
             self.JS_Click_Xpath(Mercadolibre.btn_DescargaAplicacion_xpath)
