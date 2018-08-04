@@ -1338,3 +1338,33 @@ JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The scri
 [Child 5876, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 [Parent 3460, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 [Child 4496, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1533424333845	geckodriver	INFO	geckodriver 0.19.0 (f0b5f3476d8b05a3bacebb06056ff933e26a17fa 2017-09-16)
+1533424333876	geckodriver	INFO	Listening on 127.0.0.1:65450
+1533424337140	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Will\\AppData\\Local\\Temp\\rust_mozprofile.XiVL4ZbHry0q"
+1533424351030	Marionette	INFO	Listening on port 65460
+1533424351450	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://http2.mlstatic.com/static/org-img/ch/vendor/jquery/jquery-1.10.2.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Child 7520, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7520, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 6844, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+1533424409111	geckodriver	INFO	geckodriver 0.19.0 (f0b5f3476d8b05a3bacebb06056ff933e26a17fa 2017-09-16)
+1533424409213	geckodriver	INFO	Listening on 127.0.0.1:49729
+1533424412370	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Will\\AppData\\Local\\Temp\\rust_mozprofile.7cNpqPFh9mtI"
+[Parent 7116, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5604, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5604, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2604, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2604, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 7116, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Parent 7116, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3944, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1533424451615	Marionette	FATAL	Remote protocol server failed to start: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIServerSocket.asyncListen]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: chrome://marionette/content/server.js :: set acceptConnections :: line 92"  data: no] Stack trace: set acceptConnections()@server.js:92
+start()@server.js:116
+init/<()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/marionette.js:442
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1533424467660	geckodriver	INFO	geckodriver 0.19.0 (f0b5f3476d8b05a3bacebb06056ff933e26a17fa 2017-09-16)
+1533424467693	geckodriver	INFO	Listening on 127.0.0.1:55501
+1533424470718	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Will\\AppData\\Local\\Temp\\rust_mozprofile.0WkMJBtBRAtn"
+1533424491594	Marionette	INFO	Listening on port 55521
+1533424491699	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://http2.mlstatic.com/static/org-img/ch/vendor/jquery/jquery-1.10.2.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
