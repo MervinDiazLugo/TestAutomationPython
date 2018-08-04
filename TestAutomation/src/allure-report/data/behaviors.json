@@ -1,0 +1,25 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Google Play",
+    "children" : [ {
+      "name" : "001: verify query results for RAET in google",
+      "children" : [ {
+        "name" : "test_006_B",
+        "uid" : "9fa948c292835ecc",
+        "parentUid" : "ec67888b0158fcbdda58485bc6482b5c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1533423535455,
+          "stop" : 1533423576949,
+          "duration" : 41494
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ec67888b0158fcbdda58485bc6482b5c"
+    } ],
+    "uid" : "8f89c392510c034af233f70134028004"
+  } ]
+}

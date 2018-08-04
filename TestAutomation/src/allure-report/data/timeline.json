@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "user-PC",
+    "children" : [ {
+      "name" : "6644-MainThread",
+      "children" : [ {
+        "name" : "test_006_B",
+        "uid" : "9fa948c292835ecc",
+        "parentUid" : "cbd53ab37e4e55f7e430990e434e671e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1533423535455,
+          "stop" : 1533423576949,
+          "duration" : 41494
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cbd53ab37e4e55f7e430990e434e671e"
+    } ],
+    "uid" : "c6efc3d9af4e549b793384fc3cf826d3"
+  } ]
+}

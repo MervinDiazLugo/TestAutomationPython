@@ -1,0 +1,117 @@
+{
+  "uid" : "9fa948c292835ecc",
+  "name" : "test_006_B",
+  "fullName" : "tst_006.tst_006#test_006_B",
+  "historyId" : "12d3f5910aa50dfeba4cd87669bc5af4",
+  "time" : {
+    "start" : 1533423535455,
+    "stop" : 1533423576949,
+    "duration" : 41494
+  },
+  "description" : "The PO gives us the following specification:</br>\n-- Abrir trello. </br>\n-- Abrir trello. </br>\n-- Abrir trello. </br>\n",
+  "descriptionHtml" : "<p>The PO gives us the following specification:</br>\n-- Abrir trello. </br>\n-- Abrir trello. </br>\n-- Abrir trello. </br></p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "The PO gives us the following specification:</br>\n-- Abrir trello. </br>\n-- Abrir trello. </br>\n-- Abrir trello. </br>\n",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Ingresar a la aplicación",
+      "time" : {
+        "start" : 1533423535455,
+        "stop" : 1533423561064,
+        "duration" : 25609
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Clicquear en el boton de descarga de aplicacion Google play",
+      "time" : {
+        "start" : 1533423561064,
+        "stop" : 1533423576737,
+        "duration" : 15673
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Verificar que se muestre el boton",
+      "time" : {
+        "start" : 1533423576737,
+        "stop" : 1533423576815,
+        "duration" : 78
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Google Play"
+  }, {
+    "name" : "story",
+    "value" : "001: verify query results for RAET in google"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "user-PC"
+  }, {
+    "name" : "thread",
+    "value" : "6644-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tst_006"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://my.tms.org/browse/TESTCASE-39",
+    "url" : "Caso de Prueba 00001",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9fa948c292835ecc.json",
+  "parameterValues" : [ ]
+}

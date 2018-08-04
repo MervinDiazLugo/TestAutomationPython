@@ -15,6 +15,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import NoSuchElementException
 from src.functions.Inicializar import Inicializar
 from selenium.webdriver.common.action_chains import ActionChains
+import pytest
 
 class Functions():
 
@@ -207,5 +208,6 @@ class Functions():
             print ("----------------")
             print ("Define bien el DRIVER")
             print ("----------------")
-            
+            pytest.skip("Define el DRIVER")
+            exit
 
