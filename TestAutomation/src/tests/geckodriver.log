@@ -1256,3 +1256,85 @@ JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The scri
 1532210111932	Marionette	INFO	Listening on port 57669
 1532210112275	Marionette	WARN	TLS certificate errors will be ignored for this session
 1532210136160	Marionette	INFO	New connections will no longer be accepted
+1533419227301	geckodriver	INFO	geckodriver 0.19.0 (f0b5f3476d8b05a3bacebb06056ff933e26a17fa 2017-09-16)
+1533419227316	geckodriver	INFO	Listening on 127.0.0.1:52666
+1533419230642	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Will\\AppData\\Local\\Temp\\rust_mozprofile.mWQJuTJtauDm"
+1533419234998	geckodriver	INFO	geckodriver 0.19.0 (f0b5f3476d8b05a3bacebb06056ff933e26a17fa 2017-09-16)
+1533419235017	geckodriver	INFO	Listening on 127.0.0.1:52684
+1533419238114	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Will\\AppData\\Local\\Temp\\rust_mozprofile.eGjMXBsJBRF8"
+1533419241042	Marionette	INFO	Enabled via --marionette
+1533419262430	geckodriver	INFO	geckodriver 0.19.0 (f0b5f3476d8b05a3bacebb06056ff933e26a17fa 2017-09-16)
+1533419262445	geckodriver	INFO	Listening on 127.0.0.1:52724
+1533419265453	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Will\\AppData\\Local\\T1533419267493	mozrunner::runner	INF1533419309449	Marionette	INFO	Listening on port 52738
+1533419324952	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/TelemetryFeed.jsm :: uninit :: line 493"  data: no] Stack trace: uninit()@resource://activity-stream/lib/TelemetryFeed.jsm:493
+onAction()@resource://activity-stream/lib/TelemetryFeed.jsm:451
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:51
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:29
+uninit()@resource://activity-stream/lib/Store.jsm:170
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:318
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:79
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:187
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:2757
+observe()@resource://gre/modules/addons/XPIProvider.jsm:1672
+JavaScript error: resource:///modules/SavantShieldStudy.jsm, line 171: TypeError: this.addonListener is undefined
+1533419325496	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js, line 33: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js, line 33: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js, line 33: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js, line 33: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js, line 33: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js, line 33: TypeError: NetworkError when attempting to fetch resource.
+1533419326627	geckodriver	INFO	geckodriver 0.19.0 (f0b5f3476d8b05a3bacebb06056ff933e26a17fa 2017-09-16)
+1533419326644	geckodriver	INFO	Listening on 127.0.0.1:52885
+1533419329470	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Will\\AppData\\Local\\Temp\\rust_mozprofile.WKuGLxFfzZPB"
+1533419336630	Marionette	INFO	Listening on port 52895
+1533419336807	Marionette	WARN	TLS certificate errors will be ignored for this session
+1533419337343	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/TelemetryFeed.jsm :: uninit :: line 493"  data: no] Stack trace: uninit()@resource://activity-stream/lib/TelemetryFeed.jsm:493
+onAction()@resource://activity-stream/lib/TelemetryFeed.jsm:451
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:51
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:29
+uninit()@resource://activity-stream/lib/Store.jsm:170
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:318
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:79
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:187
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:2757
+observe()@resource://gre/modules/addons/XPIProvider.jsm:1672
+[Child 3584, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3584, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1533419342990	geckodriver	INFO	geckodriver 0.19.0 (f0b5f3476d8b05a3bacebb06056ff933e26a17fa 2017-09-16)
+1533419343005	geckodriver	INFO	Listening on 127.0.0.1:52924
+1533419346093	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Will\\AppData\\Local\\Temp\\rust_mozprofile.e2WhYsmf0Ixl"
+1533419349951	Marionette	INFO	Listening on port 52934
+1533419350213	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://http2.mlstatic.com/static/org-img/ch/vendor/jquery/jquery-1.10.2.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Child 6072, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 464
+1533419398447	geckodriver	INFO	geckodriver 0.19.0 (f0b5f3476d8b05a3bacebb06056ff933e26a17fa 2017-09-16)
+1533419398463	geckodriver	INFO	Listening on 127.0.0.1:53043
+1533419401487	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Will\\AppData\\Local\\Temp\\rust_mozprofile.MtZ0h8JSrkYP"
+1533419406031	Marionette	INFO	Listening on port 53053
+1533419406707	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The script https://mlstaticquic-a.akamaihd.net/ui/searchbox/2.0.8/index.js is not accessible.
+JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The script https://mlstaticquic-a.akamaihd.net/resources/frontend/statics/homes-palpatine/home.desktop.4df6a1a6.js is not accessible.
+JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The script https://mlstaticquic-a.akamaihd.net/resources/frontend/statics/ml-widgets/nav-cart/v1.1.5/CartWidget.js is not accessible.
+JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The script https://mlstaticquic-a.akamaihd.net/resources/frontend/statics/ml-widgets/categories/v1.0.7/categories.js is not accessible.
+JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The script https://mlstaticquic-a.akamaihd.net/resources/frontend/statics/ml-widgets/snackbar/v1.0.0/snackbar.js is not accessible.
+JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The script https://mlstaticquic-a.akamaihd.net/resources/frontend/statics/homes-palpatine/vendor.d1caea05.js is not accessible.
+1533419463736	geckodriver	INFO	geckodriver 0.19.0 (f0b5f3476d8b05a3bacebb06056ff933e26a17fa 2017-09-16)
+1533419463750	geckodriver	INFO	Listening on 127.0.0.1:53188
+1533419466827	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Will\\AppData\\Local\\Temp\\rust_mozprofile.WwO55xvYTZao"
+1533419470518	Marionette	INFO	Listening on port 53198
+1533419470999	Marionette	WARN	TLS certificate errors will be ignored for this session
+1533419505947	geckodriver	INFO	geckodriver 0.19.0 (f0b5f3476d8b05a3bacebb06056ff933e26a17fa 2017-09-16)
+1533419505964	geckodriver	INFO	Listening on 127.0.0.1:53288
+1533419508923	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Will\\AppData\\Local\\Temp\\rust_mozprofile.O4QMPXCGJX5H"
+1533419512968	Marionette	INFO	Listening on port 53298
+1533419513070	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The script https://mlstaticquic-a.akamaihd.net/resources/frontend/statics/ml-widgets/categories/v1.0.7/categories.js is not accessible.
+JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The script https://mlstaticquic-a.akamaihd.net/resources/frontend/statics/homes-palpatine/vendor.d1caea05.js is not accessible.
+JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The script https://mlstaticquic-a.akamaihd.net/resources/frontend/statics/homes-palpatine/home.desktop.4df6a1a6.js is not accessible.
+JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The script https://mlstaticquic-a.akamaihd.net/resources/frontend/statics/ml-widgets/snackbar/v1.0.0/snackbar.js is not accessible.
+JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The script https://mlstaticquic-a.akamaihd.net/ui/searchbox/2.0.8/index.js is not accessible.
+JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The script https://mlstaticquic-a.akamaihd.net/resources/frontend/statics/ml-widgets/nav-cart/v1.1.5/CartWidget.js is not accessible.
+[Child 5876, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 3460, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4496, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
