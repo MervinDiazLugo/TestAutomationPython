@@ -1256,3 +1256,7 @@ JavaScript error: https://www.mercadolibre.com.ar/, line 102: URIError: The scri
 1532210111932	Marionette	INFO	Listening on port 57669
 1532210112275	Marionette	WARN	TLS certificate errors will be ignored for this session
 1532210136160	Marionette	INFO	New connections will no longer be accepted
+1533420091909	geckodriver	INFO	geckodriver 0.21.0
+1533420092148	geckodriver	INFO	Listening on 127.0.0.1:53780
+1533420123590	geckodriver	INFO	geckodriver 0.21.0
+1533420123604	geckodriver	INFO	Listening on 127.0.0.1:53791
