@@ -1,8 +1,0 @@
-[ {
-  "buildOrder" : 4,
-  "reportUrl" : "http://jenkins:8080/job/Prueba/4/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "Test defects" : 1
-  }
-} ]
