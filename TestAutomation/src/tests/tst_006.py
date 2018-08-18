@@ -7,6 +7,8 @@ from src.pages.Mercadolibre import Mercadolibre
 import allure
 
 
+
+
 @allure.feature(u'Google Play')
 @allure.story(u'001: verify query results for RAET in google')
 @allure.testcase(u"Caso de Prueba 00001", u'http://my.tms.org/browse/TESTCASE-39')
