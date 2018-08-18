@@ -1,0 +1,18 @@
+﻿<environment>
+    <parameter>
+        <key>Aplicacion</key>
+        <value>CRM SAP Fiori</value>
+    </parameter>
+    <parameter>
+        <key>Browser</key>
+        <value>FIREFOX</value>
+    </parameter>
+    <parameter>
+        <key>Ambiente</key>
+        <value>Homologación</value>
+    </parameter>
+    <parameter>
+        <key>Nodo</key>
+        <value>IBA8059</value>
+    </parameter>
+</environment>
