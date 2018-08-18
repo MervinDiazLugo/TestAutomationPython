@@ -1,6 +1,9 @@
 [ {
+  "buildOrder" : 4,
+  "reportUrl" : "http://jenkins:8080/job/Prueba/4/allure",
+  "reportName" : "AllureReport",
   "data" : {
-    "run" : 1,
-    "retry" : 0
+    "run" : 5,
+    "retry" : 9
   }
 } ]

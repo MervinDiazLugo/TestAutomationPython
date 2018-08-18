@@ -1,5 +1,8 @@
 [ {
+  "buildOrder" : 4,
+  "reportUrl" : "http://jenkins:8080/job/Prueba/4/allure",
+  "reportName" : "AllureReport",
   "data" : {
-    "duration" : 41494
+    "duration" : 1201525024
   }
 } ]

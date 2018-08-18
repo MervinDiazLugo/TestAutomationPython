@@ -1,1 +1,10 @@
-[ ]
+[ {
+  "name" : "Jenkins",
+  "type" : "jenkins",
+  "url" : "http://jenkins:8080/",
+  "buildOrder" : 4,
+  "buildName" : "TestAutomation #4",
+  "buildUrl" : "http://jenkins:8080/job/Prueba/4/",
+  "reportName" : "AllureReport",
+  "reportUrl" : "http://jenkins:8080/job/Prueba/4/allure"
+} ]
