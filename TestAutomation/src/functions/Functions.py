@@ -4,7 +4,8 @@ Created on 1 jul. 2018
 
 @author: MMLPQTP
 '''
-import time, os, shutil
+import time, os, shutil, io, allure
+from PIL import Image
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as Chrome_Options
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
@@ -150,6 +151,14 @@ class Functions():
         print (img)
          
         return img  
+    
+    def get_image(self, Descripcion):
+        IMAGEN = self.capturar_Pantalla()
+        CAPTURA = Image.open(IMAGEN, mode="r")
+        ImageProcess = io.BytesIO()
+        CAPTURA.save(ImageProcess, format= "PNG")
+        ImageProcess = ImageProcess.getvalue()
+        allure.attach(ImageProcess, Descripcion, attachment_type=allure.attachment_type.PNG)
     
     def waitStopLoad(self, timeLoad=8):
         print ("waitStopLoad: Inicia")

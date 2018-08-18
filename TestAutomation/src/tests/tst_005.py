@@ -40,7 +40,7 @@ class tst_005(unittest.TestCase, Functions):
             self.waitStopLoad(3)
             self.esperar_Xpath(Mercadolibre.lbl_Mujers_xpath)
         
-            self.capturar_Pantalla()
+            self.get_image("Productos Damas")
         
 
 
@@ -52,7 +52,7 @@ class tst_005(unittest.TestCase, Functions):
             self.waitStopLoad(5)
             self.esperar_Xpath(Mercadolibre.btn_Android_xpath)
         
-            self.capturar_Pantalla()
+            self.get_image("Ir a la pantalla para Descargar ")
     
 
     
