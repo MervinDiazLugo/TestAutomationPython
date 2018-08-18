@@ -1,11 +1,11 @@
 ﻿<environment>
     <parameter>
         <key>Aplicacion</key>
-        <value>CRM SAP Fiori</value>
+        <value>Prueba</value>
     </parameter>
     <parameter>
         <key>Browser</key>
-        <value>FIREFOX</value>
+        <value>CHROME</value>
     </parameter>
     <parameter>
         <key>Ambiente</key>
@@ -13,6 +13,6 @@
     </parameter>
     <parameter>
         <key>Nodo</key>
-        <value>IBA8059</value>
+        <value>master</value>
     </parameter>
 </environment>

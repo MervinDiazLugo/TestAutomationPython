@@ -4,7 +4,7 @@ Created on 1 jul. 2018
 
 @author: MMLPQTP
 '''
-import time, os
+import time, os, shutil
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as Chrome_Options
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
@@ -161,6 +161,47 @@ class Functions():
                     totalWait = totalWait + 1
         except: 
             print ("waitStopLoad: Carga Finalizada ... ")
+            
+    def Modificar_XML_Enviroments(self):
+
+        print ("--------------------------------------")
+        print ("Estableciendo Datos del Reporte...")
+        JOB_NAME = os.environ['JOB_NAME']
+        NODE_NAME = os.environ['NODE_NAME']
+        NAVEGADOR = Inicializar.NAVEGADOR
+        print (NODE_NAME)
+        print (JOB_NAME)
+        print (NAVEGADOR)
+        print ("--------------------------------------")
+
+        Enviroment = open('../data/environment.xml', 'w')
+        Template = open('../data/environment_Template.xml', 'r')
+        
+        with Template as f:
+            texto = f.read()
+            
+            texto = texto.replace("JOB_NAME", JOB_NAME)
+            texto = texto.replace("NODE_NAME", NODE_NAME)
+            texto = texto.replace("NAVEGADOR", NAVEGADOR)
+        
+        with Enviroment as f:
+            f.write(texto)
+             
+        Enviroment.close()    
+        Template.close()
+
+        time.sleep(5) 
+        
+        shutil.rmtree("../allure-results")
+        
+        try:
+            os.makedirs("../allure-results")
+        except OSError:
+            print ("No se pudo generar la carpeta ../allure-results")
+        
+        shutil.copy("../data/environment.xml","../allure-results")           
+
+
     ##########################################################################
     ##############   -=_INICIALIZAR DRIVERS_=-   #############################
     ##########################################################################
@@ -210,4 +251,6 @@ class Functions():
             print ("----------------")
             pytest.skip("Define el DRIVER")
             exit
+
+
 
