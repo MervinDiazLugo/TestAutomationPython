@@ -4,9 +4,10 @@ Created on 17 may. 2018
 @author: MD432339
 '''
 
-class Inicio:
+class Home:
 
-    img_Logo_xpath           = "//*[@id='hplogo']/a/img"
-    txt_busqueda_xpath        = "//input[@name='q']"
+
+    txt_busqueda_xpath  =  "//*[@id='lst-ib']"
     
-    txt_resultStats_xpath = "//*[@id='resultStats']"
+    txt_resultado_xpath = "//*[@id='resultStats']"
+    
