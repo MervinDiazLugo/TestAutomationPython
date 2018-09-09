@@ -24,7 +24,7 @@ class tst_003(unittest.TestCase, Functions):
 
     def setUp(self):
         with allure.step(u'Abrir el navegador'):
-            self.driver = self.abrir_Navegador()
+            self.driver = self.abrir_Navegador("https://trello.com/login")
 
     def test_003(self):
         with allure.step(u'Buscar Trello'):

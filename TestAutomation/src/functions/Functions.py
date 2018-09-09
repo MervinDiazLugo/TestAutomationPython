@@ -215,7 +215,7 @@ class Functions():
     ##############   -=_INICIALIZAR DRIVERS_=-   #############################
     ##########################################################################
 
-    def abrir_Navegador(self):
+    def abrir_Navegador(self, URL):
         navegador = Inicializar.NAVEGADOR
         print ("----------------")
         print (navegador)
@@ -228,7 +228,7 @@ class Functions():
             self.driver = webdriver.Chrome(chrome_options=options)
             self.driver.implicitly_wait(10)
             self.dir_navegador = "CHROME"
-            self.driver.get(Inicializar.URL)
+            self.driver.get(URL)
             return self.driver
         
         if navegador == ("CHROME_headless"):
@@ -240,7 +240,7 @@ class Functions():
             self.driver = webdriver.Chrome(chrome_options=options)
             self.driver.implicitly_wait(10)
             self.dir_navegador = "CHROME Headless"
-            self.driver.get( Inicializar.URL)
+            self.driver.get(URL)
             return self.driver
         
         if navegador == ("FIREFOX"):
@@ -251,12 +251,12 @@ class Functions():
 
             self.driver.implicitly_wait(10)
             self.dir_navegador = "FIREFOX"
-            self.driver.get( Inicializar.URL)
+            self.driver.get(URL)
             return self.driver 
         
         elif navegador != ("CHROME_headless") and  navegador != ("CHROME") and navegador != ("FIREFOX") :
             print ("----------------")
-            print ("Define bien el DRIVER")
+            print ("Define el DRIVER")
             print ("----------------")
             pytest.skip("Define el DRIVER")
             exit

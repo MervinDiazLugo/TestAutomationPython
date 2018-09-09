@@ -25,8 +25,8 @@ class tst_005(unittest.TestCase, Functions):
 
     def setUp(self):
         with allure.step(u'VER PRODUCTOS DE DAMAS, DESCARGA DE APP'):
-            self.driver = self.abrir_Navegador()
-            self.driver.get(Inicializar.URL2)
+            self.driver = self.abrir_Navegador("https://www.mercadolibre.com.ar/")
+
 
     def test_005_A(self):
         with allure.step(u'Ver en Pantalla Productos de Damas'):

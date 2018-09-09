@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
-import unittest
+import unittest, time
 from src.functions.Functions import Functions
-from src.functions.Inicializar import Inicializar
-from src.pages.Mercadolibre import Mercadolibre
 
 import allure
 
@@ -22,29 +20,23 @@ class tst_006(unittest.TestCase, Functions):
 
     def setUp(self):
         with allure.step(u'Ingresar a la aplicación'):
-            self.driver = self.abrir_Navegador()
-            self.driver.get(Inicializar.URL2)
+            self.driver = self.abrir_Navegador("http://oldelval.practia.global/")
     
 
     def test_006_B(self):
-        with allure.step(u'Clicquear en el boton de descarga de aplicacion Google play'):
-            self.esperar_Xpath(Mercadolibre.btn_DescargaAplicacion_xpath)
+
             
-            self.JS_Click_Xpath(Mercadolibre.btn_DescargaAplicacion_xpath)
-            
-            self.waitStopLoad(5)
-            self.esperar_Xpath(Mercadolibre.btn_Android_xpath)
-            
-            
-        with allure.step(u'Verificar que se muestre el boton'):   
-            VERIFICAR = self.verificar_xpath(Mercadolibre.btn_Android_xpath)
-            
-            print ("El elemento esta presente: " + str(VERIFICAR))
-            
-            self.assertTrue(VERIFICAR)
-     
-            self.capturar_Pantalla()
+        arreglo = self.driver.find_elements_by_xpath("(//div[contains(@class, 'login-box')]//*[contains(@id,'txt')])")
+        datos = ["User1" , "123456"]
+        i = 0
+        for txts in arreglo:
+            txts.send_keys(datos[i])
+            i = ++1
         
+        self.driver.find_element_by_xpath("(//div[contains(@class, 'login-box')]//*[contains(text(),'Ingresar')])").click()
+        
+        time.sleep(5)
+            
 
     
     def tearDown(self):

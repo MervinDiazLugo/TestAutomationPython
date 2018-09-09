@@ -7,7 +7,7 @@ from src.pages.Login import Login
 class tst_001(unittest.TestCase, Functions):
 
     def setUp(self):
-        self.driver = self.abrir_Navegador()
+        self.driver = self.abrir_Navegador("https://trello.com/login")
 
     def test_001(self):
         TEXT = self.Xpath_Elements(Login.lbl_Titulo_xpath).text
