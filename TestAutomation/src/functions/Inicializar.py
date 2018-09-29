@@ -23,5 +23,7 @@ class Inicializar():
     
     Path_Evidencias = "C:\\Evidencias\\TestPython\\"
     
+    Excel = "../data/datos.xlsx"
+    
 
                

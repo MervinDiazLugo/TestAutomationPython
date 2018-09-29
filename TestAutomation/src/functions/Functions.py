@@ -4,7 +4,7 @@ Created on 1 jul. 2018
 
 @author: MMLPQTP
 '''
-import time, os, shutil, io, allure
+import time, os, shutil, io, allure, openpyxl
 from PIL import Image
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as Chrome_Options
@@ -17,6 +17,10 @@ from selenium.common.exceptions import NoSuchElementException
 from src.functions.Inicializar import Inicializar
 from selenium.webdriver.common.action_chains import ActionChains
 import pytest
+
+
+diaGlobal= time.strftime("%Y-%m-%d")  # formato aaaa/mm/dd
+horaGlobal = time.strftime("%H%M%S")  # formato 24 houras
 
 class Functions():
 
@@ -136,7 +140,7 @@ class Functions():
         GeneralPath = Inicializar.Path_Evidencias
         DriverTest = Inicializar.NAVEGADOR
         TestCase = self.__class__.__name__
-        horaAct = str(hora_Actual())
+        horaAct = horaGlobal
         
         path = GeneralPath + dia + "\\" + TestCase + "\\" + DriverTest + "\\" +  horaAct + "\\"
  
@@ -210,7 +214,28 @@ class Functions():
         
         shutil.copy("../data/environment.xml","../allure-results")           
 
-
+#Excel 
+    def LeerCelda(self, celda):
+        wb = openpyxl.load_workbook(Inicializar.Excel)
+        sheet = wb["Datos_Usuario"]
+        valor= str(sheet[celda].value)
+        print (u"------------------------------------")
+        print (u"El libro de excel utilizado es de es: " + Inicializar.Excel)
+        print (u"El valor de la celda es: " + valor)
+        print (u"------------------------------------")
+        return valor
+    
+    def EscribirCelda(self, celda, valor):
+        wb = openpyxl.load_workbook(Inicializar.Excel)
+        hoja = wb["Datos_Usuario"]
+        hoja[celda]= valor
+        wb.save(Inicializar.Excel)
+        print (u"------------------------------------")
+        print (u"El libro de excel utilizado es de es: " + Inicializar.Excel)
+        print (u"Se escribio en la celda " + str(celda) + u" el valor: " + str (valor))
+        print (u"------------------------------------")
+        
+        
     ##########################################################################
     ##############   -=_INICIALIZAR DRIVERS_=-   #############################
     ##########################################################################

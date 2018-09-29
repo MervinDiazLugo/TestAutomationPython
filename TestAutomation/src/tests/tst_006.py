@@ -33,6 +33,7 @@ class tst_006(unittest.TestCase, Functions):
         
         self.Xpath_Elements("(//div[contains(@class, 'login-box')]//*[contains(text(),'Ingresar')])").click()
         
+        self.get_image("HOLA")
         time.sleep(5)
             
 
