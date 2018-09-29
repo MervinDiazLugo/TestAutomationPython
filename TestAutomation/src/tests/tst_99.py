@@ -89,7 +89,7 @@ class tst_01(unittest.TestCase):
             print (Resultado)
             RAET = Resultado.split(" ")[2]
             print ("RAET obtuvo: " + str(RAET) + " Resultados de busqueda")
-            
+        
             
     def tearDown(self):
         with allure.step(u'PASO 4: Cerrar Navegador'):

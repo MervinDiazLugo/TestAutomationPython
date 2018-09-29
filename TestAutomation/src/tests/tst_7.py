@@ -3,6 +3,7 @@ import unittest, time
 from src.functions.Functions import Functions
 
 import allure
+from builtins import len
 
 
 
@@ -27,13 +28,10 @@ class tst_006(unittest.TestCase, Functions):
 
             
         arreglo = self.driver.find_elements_by_xpath("(//div[contains(@class, 'login-box')]//*[contains(@id,'txt')])")
-        datos = ["User1" , "123456"]
-        i = 0
-        for txts in arreglo:
-            txts.send_keys(datos[i])
-            i = ++1
         
-        self.Xpath_Elements("(//div[contains(@class, 'login-box')]//*[contains(text(),'Ingresar')])").click()
+        elementos = len(arreglo)
+        
+        print("Encontre: ", elementos, "resultados")
         
         time.sleep(5)
             
