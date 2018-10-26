@@ -2,6 +2,7 @@ eclipse.preferences.version=1
 encoding//src/functions/Functions.py=utf-8
 encoding//src/pages/Google.py=utf-8
 encoding//src/parts/Login.py=utf-8
+encoding//src/parts/Menu.py=utf-8
 encoding//src/tests/Test_002.py=utf-8
 encoding//src/tests/tst_001.py=utf-8
 encoding//src/tests/tst_003.py=utf-8

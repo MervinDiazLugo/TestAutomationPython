@@ -16,6 +16,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import NoSuchElementException
 from src.functions.Inicializar import Inicializar
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import Select   
 import pytest
 
 
@@ -33,6 +34,18 @@ class Functions():
         elements = self.driver.find_element_by_id(ID)
         print ("Xpath_Elements: Se interactuo con el elemento " + ID)
         return elements
+    
+    def select_elements_xpath(self, xpath):
+        select = Select(self.driver.find_element_by_xpath(xpath))
+        return select
+    
+        #USO
+
+#       select by visible text
+#       select.select_by_visible_text('Banana')
+        
+#       select by value 
+#       select.select_by_value('1')
 
     def esperar_Xpath(self, XPATH): #Esperar que un elemento sea visible 
         try:
@@ -107,7 +120,10 @@ class Functions():
         element = self.driver.find_element_by_css_selector(css)
         action = ActionChains(self.driver)
         action.move_to_element(element).perform() 
-  
+        
+    ##########################################################################
+    ##############    -=_VERIFICACION _=-                ###################
+    ##########################################################################
     def verificar_xpath(self, xpath): #devuelve true o false
         try:
             self.driver.find_element_by_xpath(xpath)
@@ -127,6 +143,15 @@ class Functions():
         print (u"Verificar: Se visualizo el elemento, "+ CSS)
         return True
     
+    def verificarTexto_xpath(self, xpath, TEXTO): #devuelve true o false
+        try:
+            wait = WebDriverWait(self.driver, 15)
+            wait.until(EC.text_to_be_present_in_element((By.XPATH, xpath), TEXTO))
+        except TimeoutException:
+            print (u"Verificar Texto: Texto No presente " + xpath + " el texto, " + TEXTO)
+            return False
+        print (u"Verificar Texto: Se visualizó en, " + xpath + " el texto, " + TEXTO)
+        return True
     
     ##############   -=_CAPTURA DE PANTALLA_=-   #############################
     ##########################################################################        
@@ -234,6 +259,22 @@ class Functions():
         print (u"El libro de excel utilizado es de es: " + Inicializar.Excel)
         print (u"Se escribio en la celda " + str(celda) + u" el valor: " + str (valor))
         print (u"------------------------------------")
+        
+    ##########################################################################
+    ##############   -=_ASSERTION_=-   #############################
+    ##########################################################################       
+    def Assert_xpath(self, xpath):
+        try:
+            
+            wait = WebDriverWait(self.driver, 2)
+            wait.until(EC.visibility_of_element_located((By.XPATH, xpath)))
+            
+        except TimeoutException:
+            print (u"Assert_xpath: Elemento No presente " + xpath)
+            self.assertTrue(False)
+            
+        print (u"Assert_xpath: Se visualizo el elemento, "+ xpath)
+        self.assertTrue(True)      
         
         
     ##########################################################################

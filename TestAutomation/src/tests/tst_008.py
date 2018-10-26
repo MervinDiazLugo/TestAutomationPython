@@ -2,6 +2,7 @@
 import unittest
 from src.functions.Functions import Functions
 from src.parts.Login import Login 
+from src.parts.Menu import Menu
 
 import allure
 
@@ -15,7 +16,7 @@ import allure
 -- Ingresa un usuario valido. </br>
 -- Ingresa una contraseña correcta. </br>
 """)
-class tst_008(unittest.TestCase,Login, Functions):
+class tst_008(unittest.TestCase,Login, Menu, Functions):
 
     def setUp(self):
         with allure.step(u'Ingresar a la aplicación'):
@@ -27,6 +28,8 @@ class tst_008(unittest.TestCase,Login, Functions):
         with allure.step(u"Se loguea en la aplicacion"):
             self.Login_app()
             
+        with allure.step(u"Ductos E ingresos ------> Punto de Ingreso"):
+            self.Menu_DuctosEInstalaciones_PuntoDeIngreso()
             
     
     def tearDown(self):
